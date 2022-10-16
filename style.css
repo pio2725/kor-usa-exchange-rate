@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background: #1d2b3a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    border-radius: 20px;
+}
+
+.head {
+    color: #fff;
+}
+
+.kor, .usa {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    color: #00dfc4;
+    border-color: #00dfc4;
+    margin-left: 7px;
+}
+
+.btn:hover {
+    background-color: #00dfc4;
+    border-color: #1d2b3a;
+    color: #1d2b3a;
+}
+
+.inputbox {
+    position: relative;
+    width: 250px;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+.description {
+    color: white;
+}
+
+.inputbox span {
+    position: absolute;
+    left:0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255,255,255,0.25);
+    transition: 0.5s;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span 
+{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    /*letter-spacing: 0.2em;*/
+}
+
+.inputbox input:valid,
+.inputbox input:focus {
+    border: 1px solid #00dfc4;
+}
+
+@media only screen and (min-width: 961px) {
+    
+    .form {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background: #1d2b3a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    border-radius: 20px;
+}
+.inputbox {
+    position: relative;
+    width: 300px;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+}
+    
+    
+    
+}
